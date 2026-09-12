@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Dev Flow community interface</title>
+  <desc id="desc">A developer community cover showing questions, tags, collections, and profiles.</desc>
+  <rect width="800" height="500" fill="#09090b"/>
+  <rect x="38" y="30" width="724" height="440" rx="18" fill="#18181b" stroke="#3f3f46"/>
+  <circle cx="75" cy="65" r="14" fill="#f59e0b"/>
+  <text x="104" y="73" fill="#fafafa" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Dev Flow</text>
+  <rect x="575" y="48" width="145" height="34" rx="17" fill="#f59e0b"/>
+  <text x="612" y="70" fill="#18181b" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">Ask a question</text>
+  <text x="75" y="140" fill="#fafafa" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="700">Developer questions</text>
+  <g transform="translate(75 175)">
+    <rect width="610" height="72" rx="10" fill="#27272a"/>
+    <rect y="92" width="610" height="72" rx="10" fill="#27272a"/>
+    <rect y="184" width="610" height="72" rx="10" fill="#27272a"/>
+    <g fill="#fafafa" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="600"><text x="20" y="29">Questions and answers</text><text x="20" y="121">Tags and collections</text><text x="20" y="213">Profiles and voting</text></g>
+    <g fill="#71717a"><rect x="20" y="43" width="380" height="8" rx="4"/><rect x="20" y="135" width="430" height="8" rx="4"/><rect x="20" y="227" width="350" height="8" rx="4"/></g>
+  </g>
+</svg>
