@@ -10,6 +10,7 @@ import { getPortfolioCopy, type Locale } from "@/lib/i18n";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 const emailUrl = "mailto:ahmedelsayed3157@gmail.com";
+const projectEmailUrl = `${emailUrl}?subject=Project%20inquiry`;
 type PortfolioCopy = ReturnType<typeof getPortfolioCopy>;
 
 function AhmedAvatar() {
@@ -24,6 +25,10 @@ function HeroMessage({ copy, reduceMotion }: { copy: PortfolioCopy; reduceMotion
       </motion.div>
       <motion.h1 id="hero-title" initial={false}>{copy.hero.titleLines[0]}<br />{copy.hero.titleLines[1]}</motion.h1>
       <motion.p initial={false}>{copy.hero.description}</motion.p>
+      <div className="hero-actions">
+        <a className="hero-action-primary" href="#projects">{copy.hero.viewWork}<ArrowUpRight aria-hidden="true" /></a>
+        <a href={projectEmailUrl}>{copy.hero.discussProject}</a>
+      </div>
     </div>
   );
 }

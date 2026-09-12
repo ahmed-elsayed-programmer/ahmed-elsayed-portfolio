@@ -11,12 +11,17 @@ const emailUrl = "mailto:ahmedelsayed3157@gmail.com";
 const githubUrl = "https://github.com/ahmed-elsayed-programmer";
 const linkedinUrl = "https://www.linkedin.com/in/ahmed-elsayed-developer";
 type NavigationCopy = ReturnType<typeof getPortfolioCopy>["navigation"];
+type PortfolioChromeProps = {
+  locale: Locale;
+  basePath?: string;
+  alternateHref?: string;
+};
 
-function NavigationLinks({ copy, menuOpen, closeMenu }: { copy: NavigationCopy; menuOpen: boolean; closeMenu: () => void }) {
+function NavigationLinks({ copy, menuOpen, closeMenu, basePath }: { copy: NavigationCopy; menuOpen: boolean; closeMenu: () => void; basePath: string }) {
   return (
     <div className="nav-links" id="portfolio-nav-links" data-open={menuOpen}>
       {copy.links.map(([label, href]) => (
-        <a href={href} onClick={closeMenu} key={href}>{label}</a>
+        <a href={`${basePath}${href}`} onClick={closeMenu} key={href}>{label}</a>
       ))}
     </div>
   );
@@ -37,20 +42,20 @@ function NavigationMenuButton({ copy, menuOpen, toggleMenu }: { copy: Navigation
   );
 }
 
-function NavigationActions({ copy, locale, menuOpen, toggleMenu }: { copy: NavigationCopy; locale: Locale; menuOpen: boolean; toggleMenu: () => void }) {
+function NavigationActions({ copy, locale, menuOpen, toggleMenu, alternateHref }: { copy: NavigationCopy; locale: Locale; menuOpen: boolean; toggleMenu: () => void; alternateHref?: string }) {
   const alternateLocale = locale === "en" ? "ar" : "en";
 
   const selectAlternateLanguage = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     document.cookie = `portfolio-locale=${alternateLocale}; path=/; max-age=31536000; SameSite=Lax`;
-    window.location.assign(`/${alternateLocale}${window.location.hash}`);
+    window.location.assign(alternateHref ?? `/${alternateLocale}${window.location.hash}`);
   };
 
   return (
     <div className="nav-actions">
       <a
         className="language-switch"
-        href={`/${alternateLocale}`}
+        href={alternateHref ?? `/${alternateLocale}`}
         hrefLang={alternateLocale}
         lang={alternateLocale}
         aria-label={copy.switchLanguage}
@@ -69,7 +74,7 @@ function NavigationActions({ copy, locale, menuOpen, toggleMenu }: { copy: Navig
   );
 }
 
-function PortfolioNavigation({ locale }: { locale: Locale }) {
+function PortfolioNavigation({ locale, basePath, alternateHref }: Required<Pick<PortfolioChromeProps, "locale" | "basePath">> & Pick<PortfolioChromeProps, "alternateHref">) {
   const [menuOpen, setMenuOpen] = useState(false);
   const copy = getPortfolioCopy(locale).navigation;
   const closeMenu = () => setMenuOpen(false);
@@ -77,21 +82,21 @@ function PortfolioNavigation({ locale }: { locale: Locale }) {
 
   return (
     <nav className="portfolio-nav" aria-label={copy.ariaLabel}>
-      <a className="nav-brand" href="#home" onClick={closeMenu}>
+      <a className="nav-brand" href={`${basePath}#home`} onClick={closeMenu}>
         <span className="nav-logo" aria-hidden="true">AE</span>
         <span>{getPortfolioCopy(locale).name}</span>
       </a>
-      <NavigationLinks copy={copy} menuOpen={menuOpen} closeMenu={closeMenu} />
-      <NavigationActions copy={copy} locale={locale} menuOpen={menuOpen} toggleMenu={toggleMenu} />
+      <NavigationLinks copy={copy} menuOpen={menuOpen} closeMenu={closeMenu} basePath={basePath} />
+      <NavigationActions copy={copy} locale={locale} menuOpen={menuOpen} toggleMenu={toggleMenu} alternateHref={alternateHref} />
     </nav>
   );
 }
 
-function ToolRail({ locale }: { locale: Locale }) {
+function ToolRail({ locale, basePath }: Required<Pick<PortfolioChromeProps, "locale" | "basePath">>) {
   const copy = getPortfolioCopy(locale).navigation;
   return (
     <aside className="tool-rail" aria-label={copy.linksAriaLabel}>
-      <a href="#home" aria-label={copy.home}><Layers3 aria-hidden="true" /></a>
+      <a href={`${basePath}#home`} aria-label={copy.home}><Layers3 aria-hidden="true" /></a>
       <a href={githubUrl} target="_blank" rel="noreferrer" aria-label="GitHub"><BsGithub aria-hidden="true" /></a>
       <a href={linkedinUrl} target="_blank" rel="noreferrer" aria-label="LinkedIn"><BsLinkedin aria-hidden="true" /></a>
       <a href="/CV.pdf" download aria-label={copy.downloadCv}><Download aria-hidden="true" /></a>
@@ -99,11 +104,11 @@ function ToolRail({ locale }: { locale: Locale }) {
   );
 }
 
-export default function PortfolioChrome({ locale }: { locale: Locale }) {
+export default function PortfolioChrome({ locale, basePath = "", alternateHref }: PortfolioChromeProps) {
   return (
     <>
-      <PortfolioNavigation locale={locale} />
-      <ToolRail locale={locale} />
+      <PortfolioNavigation locale={locale} basePath={basePath} alternateHref={alternateHref} />
+      <ToolRail locale={locale} basePath={basePath} />
     </>
   );
 }

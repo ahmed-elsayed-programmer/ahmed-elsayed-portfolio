@@ -71,6 +71,7 @@ export const projectsData = [
     tags: ["Next.js", "Arabic / English", "Automotive", "Responsive UI"],
     imageUrl: "/otm-cover.webp",
     projectUrl: "https://www.otm.com.sa/",
+    caseStudySlug: undefined,
     linkKind: "live",
   },
   {
@@ -82,6 +83,7 @@ export const projectsData = [
     tags: ["Django", "DRF", "Next.js", "TypeScript", "React Native", "PostgreSQL"],
     imageUrl: "/first-auto-cover.jpeg",
     projectUrl: "https://firstautoeg.com/",
+    caseStudySlug: "first-group",
     linkKind: "live",
   },
   {
@@ -93,6 +95,7 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Arabic UI", "E-commerce"],
     imageUrl: "/gold-boulevard-cover.png",
     projectUrl: "https://xd.adobe.com/view/292cbc7e-7c12-456d-8b39-3c814844be32-7c7f/grid",
+    caseStudySlug: undefined,
     linkKind: "prototype",
   },
   {
@@ -104,6 +107,7 @@ export const projectsData = [
     tags: ["Django", "DRF", "Next.js", "TypeScript", "PostgreSQL"],
     imageUrl: "/inventory-cover.svg",
     projectUrl: undefined,
+    caseStudySlug: undefined,
     linkKind: "private",
   },
   {
@@ -115,6 +119,7 @@ export const projectsData = [
     tags: ["Next.js", "TypeScript", "Prisma", "MySQL", "Stripe"],
     imageUrl: "/lms-cover.svg",
     projectUrl: undefined,
+    caseStudySlug: undefined,
     linkKind: "private",
   },
   {
@@ -126,6 +131,7 @@ export const projectsData = [
     tags: ["Next.js", "TypeScript", "MongoDB", "NextAuth", "Zod"],
     imageUrl: "/dev-flow-cover.svg",
     projectUrl: "https://github.com/ahmed-elsayed-programmer/dev-flow",
+    caseStudySlug: undefined,
     linkKind: "repository",
   },
 ] as const;

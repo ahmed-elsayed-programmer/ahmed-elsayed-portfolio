@@ -29,6 +29,7 @@ export const portfolioCopy = {
       links: [
         ["Home", "#home"],
         ["Projects", "#projects"],
+        ["Services", "#services"],
         ["About", "#about"],
         ["Experience", "#experience"],
         ["Contact", "#contact"],
@@ -45,12 +46,14 @@ export const portfolioCopy = {
       availability: "AVAILABLE FOR REMOTE ROLES & SELECT CLIENT WORK",
       titleLines: ["WEB PRODUCTS BUILT", "FOR REAL BUSINESS"],
       description:
-        "I build SaaS, e-commerce, and automotive platforms end to end—from secure Django APIs and relational data to responsive React and Next.js interfaces.",
+        "I build SaaS, e-commerce, and automotive platforms end to end—from authenticated Django APIs and relational data to responsive React and Next.js interfaces.",
+      viewWork: "View selected work",
+      discussProject: "Discuss a project",
       imageAlt: "Futuristic curved architecture overlooking a blue coastal city",
       stack: {
         eyebrow: "END-TO-END DELIVERY",
         title: "FROM API TO INTERFACE.",
-        description: "Business logic, secure APIs, relational data, responsive interfaces, testing, integrations, and production delivery.",
+        description: "Business logic, authentication, permissions, relational data, responsive interfaces, integrations, and production delivery.",
         featuredLines: ["SELECTED", "PROJECTS"],
       },
       profile: {
@@ -68,43 +71,99 @@ export const portfolioCopy = {
       description:
         "A focused selection of commercial websites and product platforms across automotive, SaaS, e-commerce, education, and developer communities.",
       liveSite: "Visit live website",
+      caseStudy: "Read case study",
       prototype: "View mobile prototype",
       repository: "View repository",
       privateWork: "Private product work",
       stackAriaLabel: "technology stack",
       imagePreview: "interface preview",
+      roleLabel: "Contribution",
+      evidenceLabel: "Evidence",
     },
     projects: {
       "otm-motors": {
         type: "Automotive platform",
+        role: "Website implementation",
+        evidence: "Live bilingual product",
         description:
           "A bilingual automotive experience for vehicle discovery, test-drive booking, finance tools, after-sales services, and vehicle care, with an AI-guided recommendation entry point.",
       },
       "first-group": {
         type: "Automotive commerce platform",
+        role: "Backend, web, and mobile implementation",
+        evidence: "Live product and private code review",
         description:
           "An end-to-end automotive catalogue and ordering platform with a Django REST API, bilingual Next.js web app, and Expo/React Native mobile app, covering products, categories, search, accounts, carts, and orders.",
       },
       "gold-boulevard": {
         type: "Multi-vendor e-commerce",
+        role: "React and TypeScript implementation",
+        evidence: "Public mobile prototype",
         description:
           "An Arabic mobile-first marketplace for gold products, covering authentication, product discovery and comparison, stores, favourites, cart, coupons, checkout, addresses, payments, notifications, and orders.",
       },
       "inventory-sales": {
         type: "Business SaaS",
+        role: "Full-stack product development",
+        evidence: "Private implementation reviewed",
         description:
           "A private business platform for organizations, branches, inventory, customers, sales, reporting, permissions, and operational dashboards.",
       },
       "learning-platform": {
         type: "Education platform",
+        role: "Full-stack product development",
+        evidence: "Private implementation reviewed",
         description:
           "A learning platform with course publishing, chapters, video, paid enrollment, learner progress, search, uploads, and teacher analytics.",
       },
       "dev-flow": {
         type: "Community product",
+        role: "Full-stack application development",
+        evidence: "Public source repository",
         description:
           "A developer community application with authentication, validated forms, questions, tags, profiles, collections, voting, and account workflows.",
       },
+    },
+    servicesSection: {
+      eyebrow: "Services",
+      title: "Product development for teams that need more than a landing page.",
+      description:
+        "I work across backend, frontend, and delivery to turn product requirements and supplied designs into maintainable web systems.",
+    },
+    services: [
+      {
+        title: "SaaS and internal systems",
+        description: "Operational products for inventory, sales, reporting, permissions, and multi-step business workflows.",
+        proof: "Django · PostgreSQL · Next.js",
+      },
+      {
+        title: "E-commerce and catalogues",
+        description: "Product discovery, search, accounts, cart, checkout, orders, and administration across web and mobile.",
+        proof: "First Group · Gold Boulevard",
+      },
+      {
+        title: "Django APIs and integrations",
+        description: "REST APIs, relational data, authentication, permissions, validation, uploads, and frontend integration.",
+        proof: "Python · Django REST Framework",
+      },
+      {
+        title: "Bilingual product interfaces",
+        description: "Responsive Arabic and English experiences with locale routing, RTL behavior, and shared product logic.",
+        proof: "Next.js · React · TypeScript",
+      },
+    ],
+    processSection: {
+      eyebrow: "How I work",
+      title: "A clear path from requirements to a product that can be verified.",
+      description:
+        "The exact activities depend on the project, but the delivery path remains visible from the first technical decision to release.",
+      steps: [
+        ["Understand", "Clarify users, workflows, constraints, supplied designs, and the evidence required for completion."],
+        ["Model", "Define the data relationships, permissions, API boundaries, and frontend states before implementation."],
+        ["Build", "Implement the backend and interface in connected slices so real workflows can be reviewed early."],
+        ["Verify", "Check validation, error paths, responsive behavior, accessibility, integration, and deployment behavior."],
+        ["Deliver", "Prepare the production path, documentation, and a clear record of what was implemented."],
+      ],
     },
     about: {
       eyebrow: "About",
@@ -192,6 +251,8 @@ export const portfolioCopy = {
       description:
         "I'm available for remote full-time engineering roles and selected client projects in SaaS, e-commerce, automotive, and business systems.",
       email: "Email Ahmed",
+      projectInquiry: "Discuss a project",
+      roleInquiry: "Discuss a role",
       location: "Cairo, Egypt",
       availability: "Open to remote work",
     },
@@ -213,6 +274,7 @@ export const portfolioCopy = {
       links: [
         ["الرئيسية", "#home"],
         ["المشاريع", "#projects"],
+        ["الخدمات", "#services"],
         ["نبذة عني", "#about"],
         ["الخبرات", "#experience"],
         ["تواصل معي", "#contact"],
@@ -229,12 +291,14 @@ export const portfolioCopy = {
       availability: "متاح للعمل عن بُعد ولمشاريع مختارة",
       titleLines: ["منتجات ويب تخدم الأعمال", "من النظام إلى الواجهة"],
       description:
-        "أبني منصات SaaS ومتاجر إلكترونية وحلولًا لقطاع السيارات من البداية إلى النهاية: من واجهات Django API الآمنة وقواعد البيانات العلائقية إلى واجهات React وNext.js المتجاوبة.",
+        "أبني منصات SaaS ومتاجر إلكترونية وحلولًا لقطاع السيارات من البداية إلى النهاية: من واجهات Django API مزودة بالمصادقة والصلاحيات وقواعد البيانات العلائقية إلى واجهات React وNext.js المتجاوبة.",
+      viewWork: "عرض الأعمال المختارة",
+      discussProject: "ناقش مشروعك معي",
       imageAlt: "هندسة معمارية مستقبلية منحنية تطل على مدينة ساحلية زرقاء",
       stack: {
         eyebrow: "تطوير متكامل",
         title: "من الـ API إلى الواجهة.",
-        description: "منطق الأعمال، وواجهات API آمنة، وبيانات علائقية، وواجهات متجاوبة، واختبارات وتكاملات وتجهيز للإطلاق.",
+        description: "منطق الأعمال، والمصادقة والصلاحيات، وبيانات علائقية، وواجهات متجاوبة، وتكاملات وتجهيز للإطلاق.",
         featuredLines: ["مشاريع", "مختارة"],
       },
       profile: {
@@ -252,43 +316,99 @@ export const portfolioCopy = {
       description:
         "نماذج مختارة من مواقع تجارية ومنصات رقمية في السيارات وSaaS والتجارة الإلكترونية والتعليم ومجتمعات المطورين.",
       liveSite: "زيارة الموقع",
+      caseStudy: "قراءة دراسة الحالة",
       prototype: "عرض نموذج الهاتف",
       repository: "عرض المستودع",
       privateWork: "منتج خاص غير متاح للعامة",
       stackAriaLabel: "التقنيات المستخدمة",
       imagePreview: "معاينة لواجهة المشروع",
+      roleLabel: "مساهمتي",
+      evidenceLabel: "الدليل",
     },
     projects: {
       "otm-motors": {
         type: "منصة لقطاع السيارات",
+        role: "تنفيذ الموقع",
+        evidence: "منتج ثنائي اللغة متاح للعامة",
         description:
           "تجربة رقمية ثنائية اللغة لاكتشاف السيارات وحجز تجربة القيادة وأدوات التمويل وخدمات ما بعد البيع والعناية بالسيارة، مع مدخل لتوصية مدعومة بالذكاء الاصطناعي.",
       },
       "first-group": {
         type: "منصة تجارة ومنتجات سيارات",
+        role: "تنفيذ النظام الخلفي والويب والهاتف",
+        evidence: "منتج عام ومراجعة للكود الخاص",
         description:
           "منصة متكاملة لعرض منتجات السيارات وطلبها، تشمل واجهة Django REST API، وتطبيق ويب ثنائي اللغة بـ Next.js، وتطبيق هاتف بـ Expo وReact Native، مع المنتجات والتصنيفات والبحث والحسابات والسلة والطلبات.",
       },
       "gold-boulevard": {
         type: "متجر إلكتروني متعدد البائعين",
+        role: "التنفيذ باستخدام React وTypeScript",
+        evidence: "نموذج هاتف متاح للعامة",
         description:
           "سوق عربي للذهب مصمم للهاتف أولًا، ويشمل التسجيل واكتشاف المنتجات ومقارنتها والمتاجر والمفضلة والسلة والكوبونات والدفع والعناوين والإشعارات والطلبات.",
       },
       "inventory-sales": {
         type: "نظام SaaS للأعمال",
+        role: "تطوير المنتج Full‑Stack",
+        evidence: "تنفيذ خاص تمت مراجعته",
         description:
           "منصة أعمال خاصة لإدارة المؤسسات والفروع والمخزون والعملاء والمبيعات والتقارير والصلاحيات ولوحات التشغيل.",
       },
       "learning-platform": {
         type: "منصة تعليمية",
+        role: "تطوير المنتج Full‑Stack",
+        evidence: "تنفيذ خاص تمت مراجعته",
         description:
           "منصة لإدارة الدورات ونشرها، تشمل الفصول والفيديو والاشتراكات المدفوعة وتتبّع تقدم المتعلم والبحث والملفات وتحليلات المدرّس.",
       },
       "dev-flow": {
         type: "منتج لمجتمع المطورين",
+        role: "تطوير تطبيق Full‑Stack",
+        evidence: "مستودع كود متاح للعامة",
         description:
           "تطبيق لمجتمع المطورين يشمل المصادقة والنماذج المتحقق منها والأسئلة والوسوم والملفات الشخصية والحفظ والتصويت وإدارة الحساب.",
       },
+    },
+    servicesSection: {
+      eyebrow: "الخدمات",
+      title: "تطوير منتجات للفرق التي تحتاج إلى أكثر من صفحة تعريفية.",
+      description:
+        "أعمل عبر النظام الخلفي والواجهة ومسار التسليم لتحويل متطلبات المنتج والتصميمات المقدمة إلى أنظمة ويب قابلة للصيانة.",
+    },
+    services: [
+      {
+        title: "منصات SaaS وأنظمة التشغيل الداخلية",
+        description: "منتجات لإدارة المخزون والمبيعات والتقارير والصلاحيات ومسارات العمل متعددة الخطوات.",
+        proof: "Django · PostgreSQL · Next.js",
+      },
+      {
+        title: "المتاجر والكتالوجات الإلكترونية",
+        description: "اكتشاف المنتجات والبحث والحسابات والسلة وإتمام الطلبات والإدارة عبر الويب والهاتف.",
+        proof: "First Group · Gold Boulevard",
+      },
+      {
+        title: "واجهات Django API والتكاملات",
+        description: "واجهات REST وبيانات علائقية ومصادقة وصلاحيات وتحقق ورفع ملفات وربط مع الواجهات.",
+        proof: "Python · Django REST Framework",
+      },
+      {
+        title: "واجهات منتجات ثنائية اللغة",
+        description: "تجارب عربية وإنجليزية متجاوبة تدعم مسارات اللغات واتجاه RTL ومنطق المنتج المشترك.",
+        proof: "Next.js · React · TypeScript",
+      },
+    ],
+    processSection: {
+      eyebrow: "طريقة العمل",
+      title: "مسار واضح من المتطلبات إلى منتج يمكن التحقق منه.",
+      description:
+        "تختلف التفاصيل حسب المشروع، لكن مسار التسليم يظل واضحًا من أول قرار تقني حتى الإطلاق.",
+      steps: [
+        ["الفهم", "توضيح المستخدمين ومسارات العمل والقيود والتصميمات المقدمة ومعايير اكتمال المشروع."],
+        ["النمذجة", "تحديد علاقات البيانات والصلاحيات وحدود API وحالات الواجهة قبل التنفيذ."],
+        ["البناء", "تنفيذ النظام الخلفي والواجهة في أجزاء مترابطة لمراجعة المسارات الحقيقية مبكرًا."],
+        ["التحقق", "فحص التحقق من البيانات وحالات الخطأ والتجاوب وإتاحة الاستخدام والتكامل والنشر."],
+        ["التسليم", "تجهيز مسار الإنتاج والتوثيق وسجل واضح لما تم تنفيذه."],
+      ],
     },
     about: {
       eyebrow: "نبذة عني",
@@ -376,6 +496,8 @@ export const portfolioCopy = {
       description:
         "أنا متاح لوظائف هندسة البرمجيات عن بُعد بدوام كامل، ولمشاريع مختارة في SaaS والتجارة الإلكترونية والسيارات وأنظمة الأعمال.",
       email: "راسل أحمد",
+      projectInquiry: "ناقش مشروعك معي",
+      roleInquiry: "ناقش فرصة عمل",
       location: "القاهرة، مصر",
       availability: "متاح للعمل عن بُعد",
     },
