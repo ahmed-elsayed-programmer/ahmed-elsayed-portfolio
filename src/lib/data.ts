@@ -25,7 +25,7 @@ export const experiencesData = [
   },
   {
     id: "first-filter",
-    title: "Full Stack Engineer",
+    title: "Full Stack Developer",
     location: "First Filter",
     description:
       "Delivered web and mobile systems for automotive filter data using Django, DRF, React, Next.js, React Native, PostgreSQL, and MySQL.",
@@ -76,10 +76,10 @@ export const projectsData = [
   {
     id: "first-group",
     title: "First Group",
-    type: "Automotive catalogue",
+    type: "Automotive commerce platform",
     description:
-      "A bilingual company and product-catalogue website for an automotive-filter manufacturer and importer.",
-    tags: ["Next.js", "Arabic / English", "Product Catalogue", "Responsive UI"],
+      "An end-to-end automotive catalogue and ordering platform delivered across web, API, and mobile applications.",
+    tags: ["Django", "DRF", "Next.js", "TypeScript", "React Native", "PostgreSQL"],
     imageUrl: "/first-auto-cover.jpeg",
     projectUrl: "https://firstautoeg.com/",
     linkKind: "live",

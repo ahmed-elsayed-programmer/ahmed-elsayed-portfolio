@@ -81,9 +81,9 @@ export const portfolioCopy = {
           "A bilingual automotive experience for vehicle discovery, test-drive booking, finance tools, after-sales services, and vehicle care, with an AI-guided recommendation entry point.",
       },
       "first-group": {
-        type: "Automotive catalogue",
+        type: "Automotive commerce platform",
         description:
-          "A bilingual website for an automotive-filter manufacturer and importer, with company content, product discovery, contact routes, and a mobile-app download path.",
+          "An end-to-end automotive catalogue and ordering platform with a Django REST API, bilingual Next.js web app, and Expo/React Native mobile app, covering products, categories, search, accounts, carts, and orders.",
       },
       "gold-boulevard": {
         type: "Multi-vendor e-commerce",
@@ -134,7 +134,7 @@ export const portfolioCopy = {
         date: "Mar 2025 - Present",
       },
       "first-filter": {
-        title: "Full Stack Engineer",
+        title: "Full Stack Developer",
         description:
           "Delivered web and mobile systems for automotive filter data using Django, DRF, React, Next.js, React Native, PostgreSQL, and MySQL.",
         date: "Jun 2024 - May 2025",
@@ -265,9 +265,9 @@ export const portfolioCopy = {
           "تجربة رقمية ثنائية اللغة لاكتشاف السيارات وحجز تجربة القيادة وأدوات التمويل وخدمات ما بعد البيع والعناية بالسيارة، مع مدخل لتوصية مدعومة بالذكاء الاصطناعي.",
       },
       "first-group": {
-        type: "كتالوج سيارات رقمي",
+        type: "منصة تجارة ومنتجات سيارات",
         description:
-          "موقع ثنائي اللغة لشركة متخصصة في تصنيع واستيراد فلاتر السيارات، يقدّم معلومات الشركة واكتشاف المنتجات ووسائل التواصل ومسار تحميل التطبيق.",
+          "منصة متكاملة لعرض منتجات السيارات وطلبها، تشمل واجهة Django REST API، وتطبيق ويب ثنائي اللغة بـ Next.js، وتطبيق هاتف بـ Expo وReact Native، مع المنتجات والتصنيفات والبحث والحسابات والسلة والطلبات.",
       },
       "gold-boulevard": {
         type: "متجر إلكتروني متعدد البائعين",
@@ -318,7 +318,7 @@ export const portfolioCopy = {
         date: "مارس 2025 - الآن",
       },
       "first-filter": {
-        title: "مهندس Full‑Stack",
+        title: "مطور Full‑Stack",
         description:
           "قدّمت أنظمة ويب وهاتف لبيانات فلاتر السيارات باستخدام Django وDRF وReact وNext.js وReact Native وPostgreSQL وMySQL.",
         date: "يونيو 2024 - مايو 2025",
