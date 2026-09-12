@@ -28,7 +28,7 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The root route redirects to the saved or browser-preferred language.
+Open [http://localhost:3000](http://localhost:3000). The root route redirects to the saved language when it is Arabic; otherwise it defaults to English.
 
 ## Production verification
 
