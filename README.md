@@ -10,7 +10,7 @@ A bilingual English/Arabic portfolio for Ahmed Elsayed, a Full-Stack Engineer sp
 - Reduced-motion-aware interactions
 - Selected client work, private product work, and public repository links
 - Client-focused services, delivery process, and separate project/role inquiry actions
-- Localized First Group case study at `/en/work/first-group` and `/ar/work/first-group`
+- Localized First Group and TijaraOS case studies under `/en/work/*` and `/ar/work/*`
 - Case-study metadata, Open Graph/Twitter cards, structured data, sitemap, and robots directives
 - CV, GitHub, LinkedIn, and email contact paths
 
@@ -40,7 +40,7 @@ pnpm build
 pnpm start
 ```
 
-The production build statically generates `/en`, `/ar`, and both localized First Group case-study routes.
+The production build statically generates `/en`, `/ar`, and both language versions of every case study.
 
 ## Project structure
 
@@ -49,8 +49,9 @@ The production build statically generates `/en`, `/ar`, and both localized First
 - `src/lib/data.ts` — project, experience, and skill data
 - `src/components/hero-section.tsx` — hero content and glass cards
 - `src/components/portfolio-sections.tsx` — projects, about, experience, capabilities, and contact
-- `src/components/case-study/first-group-case-study.tsx` — First Group case-study presentation
-- `src/lib/case-studies.ts` — localized First Group case-study content
+- `src/app/[locale]/work/[slug]/page.tsx` — localized case-study route, metadata, and structured data
+- `src/components/case-study/project-case-study.tsx` — shared case-study presentation
+- `src/lib/case-studies.ts` — localized First Group and TijaraOS case-study content
 - `src/app/sitemap.ts` and `src/app/robots.ts` — crawl directives and route discovery
 - `src/app/globals.css` — visual system, responsive behavior, and theme styles
 

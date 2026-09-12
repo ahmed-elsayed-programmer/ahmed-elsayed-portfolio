@@ -100,15 +100,15 @@ export const projectsData = [
   },
   {
     id: "inventory-sales",
-    title: "Inventory & Sales SaaS",
+    title: "TijaraOS",
     type: "Business SaaS",
     description:
-      "A private platform for organizations, branches, inventory, customers, sales, reporting, permissions, and operational dashboards.",
-    tags: ["Django", "DRF", "Next.js", "TypeScript", "PostgreSQL"],
+      "A private retail-operations platform for tenant-aware access, branches, inventory, POS sales, customers, reporting, and release verification.",
+    tags: ["Django", "DRF", "Next.js", "PostgreSQL", "Redis", "Docker"],
     imageUrl: "/inventory-cover.svg",
-    projectUrl: undefined,
-    caseStudySlug: undefined,
-    linkKind: "private",
+    projectUrl: "https://github.com/ahmed-elsayed-programmer/tijaraos-engineering-case-study",
+    caseStudySlug: "tijaraos",
+    linkKind: "repository",
   },
   {
     id: "learning-platform",

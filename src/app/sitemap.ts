@@ -1,12 +1,25 @@
 import type { MetadataRoute } from "next";
+import { caseStudySlugs } from "@/lib/case-studies";
+import { locales } from "@/lib/i18n";
 
 const siteUrl = "https://ahmedelsayed.vercel.app";
+const lastModified = new Date("2026-09-13");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    { url: `${siteUrl}/en`, lastModified: new Date("2026-09-12"), changeFrequency: "monthly", priority: 1 },
-    { url: `${siteUrl}/ar`, lastModified: new Date("2026-09-12"), changeFrequency: "monthly", priority: 1 },
-    { url: `${siteUrl}/en/work/first-group`, lastModified: new Date("2026-09-12"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${siteUrl}/ar/work/first-group`, lastModified: new Date("2026-09-12"), changeFrequency: "monthly", priority: 0.8 },
-  ];
+  const portfolioRoutes: MetadataRoute.Sitemap = locales.map((locale) => ({
+    url: `${siteUrl}/${locale}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 1,
+  }));
+  const caseStudyRoutes: MetadataRoute.Sitemap = locales.flatMap((locale) =>
+    caseStudySlugs.map((slug) => ({
+      url: `${siteUrl}/${locale}/work/${slug}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    })),
+  );
+
+  return [...portfolioRoutes, ...caseStudyRoutes];
 }

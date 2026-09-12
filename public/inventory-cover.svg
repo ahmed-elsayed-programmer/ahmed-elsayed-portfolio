@@ -1,26 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
-  <title id="title">Inventory and Sales SaaS interface</title>
-  <desc id="desc">A dashboard cover showing the product areas: products, stock, sales, and invoices.</desc>
-  <rect width="800" height="500" fill="#f8fafc"/>
-  <rect width="150" height="500" fill="#111827"/>
-  <circle cx="42" cy="45" r="15" fill="#a78bfa"/>
-  <rect x="68" y="37" width="58" height="15" rx="7" fill="#fff" opacity=".9"/>
-  <g fill="#cbd5e1">
-    <rect x="28" y="105" width="92" height="12" rx="6"/>
-    <rect x="28" y="145" width="70" height="12" rx="6"/>
-    <rect x="28" y="185" width="84" height="12" rx="6"/>
-    <rect x="28" y="225" width="64" height="12" rx="6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">TijaraOS retail operations platform</title>
+  <desc id="desc">A sanitized interface illustration showing workspace, product, inventory, point-of-sale, and reporting areas without operational data.</desc>
+  <rect width="1200" height="760" fill="#f7f7f8"/>
+  <rect x="36" y="36" width="1128" height="688" fill="#ffffff" stroke="#cfd2d8"/>
+  <rect x="36" y="36" width="206" height="688" fill="#090b11"/>
+  <rect x="68" y="70" width="44" height="44" fill="#002fa7"/>
+  <text x="90" y="99" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" text-anchor="middle">T</text>
+  <text x="128" y="99" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700">TijaraOS</text>
+  <g fill="#a7abb3" font-family="Arial,Helvetica,sans-serif" font-size="14">
+    <text x="68" y="174">Workspace</text><text x="68" y="220">Products</text><text x="68" y="266">Inventory</text>
+    <text x="68" y="312">Point of sale</text><text x="68" y="358">Customers</text><text x="68" y="404">Reports</text>
   </g>
-  <text x="195" y="72" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700">Inventory &amp; Sales</text>
-  <text x="195" y="103" fill="#64748b" font-family="Inter,Arial,sans-serif" font-size="15">Products · Stock · Sales · Invoices</text>
-  <g transform="translate(195 145)">
-    <rect width="170" height="105" rx="12" fill="#ede9fe"/>
-    <rect x="195" width="170" height="105" rx="12" fill="#dbeafe"/>
-    <rect x="390" width="170" height="105" rx="12" fill="#dcfce7"/>
-    <g fill="#334155" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="600">
-      <text x="20" y="34">Products</text><text x="215" y="34">Stock</text><text x="410" y="34">Sales</text>
+  <rect x="52" y="282" width="174" height="48" fill="#002fa7"/>
+  <text x="68" y="312" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="14">Point of sale</text>
+  <line x1="242" y1="128" x2="1164" y2="128" stroke="#cfd2d8"/>
+  <text x="286" y="86" fill="#090b11" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700">Retail operations</text>
+  <text x="286" y="110" fill="#555b66" font-family="Arial,Helvetica,sans-serif" font-size="13">Workspace-scoped products, stock, sales, and reporting</text>
+  <rect x="984" y="68" width="136" height="34" fill="#f7f7f8" stroke="#cfd2d8"/>
+  <text x="1052" y="90" fill="#002fa7" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="middle">SANITIZED VIEW</text>
+  <g transform="translate(286 172)">
+    <rect width="196" height="144" fill="#ffffff" stroke="#cfd2d8"/>
+    <text x="22" y="30" fill="#002fa7" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1">PRODUCTS</text>
+    <rect x="22" y="60" width="116" height="10" fill="#090b11"/><rect x="22" y="84" width="150" height="8" fill="#cfd2d8"/><rect x="22" y="106" width="128" height="8" fill="#cfd2d8"/>
+    <rect x="218" width="196" height="144" fill="#002fa7"/>
+    <text x="240" y="30" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1">BRANCH STOCK</text>
+    <path d="M240 109 L274 82 L306 94 L342 58 L390 72" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <rect x="436" width="196" height="144" fill="#ffffff" stroke="#cfd2d8"/>
+    <text x="458" y="30" fill="#002fa7" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1">POS SALES</text>
+    <rect x="458" y="60" width="150" height="42" fill="#f7f7f8" stroke="#cfd2d8"/><line x1="476" y1="81" x2="590" y2="81" stroke="#090b11" stroke-width="6"/>
+    <rect x="654" width="196" height="144" fill="#ffffff" stroke="#cfd2d8"/>
+    <text x="676" y="30" fill="#002fa7" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" letter-spacing="1">REPORTS</text>
+    <rect x="676" y="96" width="20" height="24" fill="#cfd2d8"/><rect x="708" y="76" width="20" height="44" fill="#555b66"/><rect x="740" y="52" width="20" height="68" fill="#002fa7"/><rect x="772" y="64" width="20" height="56" fill="#090b11"/>
+  </g>
+  <g transform="translate(286 350)" font-family="Arial,Helvetica,sans-serif">
+    <rect width="850" height="322" fill="#ffffff" stroke="#cfd2d8"/>
+    <text x="24" y="38" fill="#090b11" font-size="17" font-weight="700">Operational workflow</text>
+    <text x="826" y="38" fill="#555b66" font-size="12" text-anchor="end">Organization → Branch → Inventory → Sale</text>
+    <line x1="0" y1="64" x2="850" y2="64" stroke="#cfd2d8"/>
+    <g fill="#555b66" font-size="11" font-weight="700" letter-spacing="1">
+      <text x="24" y="101">WORKSPACE</text><text x="238" y="101">BRANCH</text><text x="452" y="101">STOCK</text><text x="666" y="101">SALE</text>
     </g>
+    <rect x="24" y="126" width="160" height="92" fill="#f7f7f8" stroke="#cfd2d8"/><rect x="238" y="126" width="160" height="92" fill="#f7f7f8" stroke="#cfd2d8"/><rect x="452" y="126" width="160" height="92" fill="#f7f7f8" stroke="#cfd2d8"/><rect x="666" y="126" width="160" height="92" fill="#002fa7"/>
+    <g font-size="14" font-weight="700" text-anchor="middle">
+      <text x="104" y="180" fill="#090b11">Permissions</text><text x="318" y="180" fill="#090b11">Location scope</text><text x="532" y="180" fill="#090b11">Transaction</text><text x="746" y="180" fill="#ffffff">Receipt</text>
+    </g>
+    <path d="M184 172 H238 M398 172 H452 M612 172 H666" stroke="#002fa7" stroke-width="2"/>
+    <circle cx="211" cy="172" r="5" fill="#002fa7"/><circle cx="425" cy="172" r="5" fill="#002fa7"/><circle cx="639" cy="172" r="5" fill="#002fa7"/>
+    <text x="24" y="274" fill="#555b66" font-size="12">Django REST Framework · PostgreSQL · Redis · Next.js · Expo</text>
+    <text x="826" y="274" fill="#002fa7" font-size="12" font-weight="700" text-anchor="end">ENGINEERING PROOF</text>
   </g>
-  <rect x="195" y="285" width="560" height="155" rx="12" fill="#fff" stroke="#e2e8f0"/>
-  <g fill="#e2e8f0"><rect x="220" y="320" width="500" height="12" rx="6"/><rect x="220" y="360" width="460" height="12" rx="6"/><rect x="220" y="400" width="485" height="12" rx="6"/></g>
 </svg>

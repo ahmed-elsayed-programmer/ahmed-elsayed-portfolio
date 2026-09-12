@@ -9,15 +9,21 @@ import {
   Server,
   Smartphone,
 } from "lucide-react";
-import { getFirstGroupCaseStudy } from "@/lib/case-studies";
+import type { CaseStudyCopy } from "@/lib/case-studies";
 import type { Locale } from "@/lib/i18n";
 
-type CaseStudyCopy = ReturnType<typeof getFirstGroupCaseStudy>;
 type SectionIntroProps = {
   index: string;
   label: string;
   title: string;
   description?: string;
+};
+
+type ProjectCaseStudyProps = {
+  copy: CaseStudyCopy;
+  locale: Locale;
+  imageUrl: string;
+  projectUrl: string;
 };
 
 function SectionIntro({ index, label, title, description }: SectionIntroProps) {
@@ -33,7 +39,7 @@ function SectionIntro({ index, label, title, description }: SectionIntroProps) {
   );
 }
 
-function CaseStudyHero({ copy, locale }: { copy: CaseStudyCopy; locale: Locale }) {
+function CaseStudyHero({ copy, locale, imageUrl, projectUrl }: ProjectCaseStudyProps) {
   const DirectionalArrow = locale === "ar" ? ArrowRight : ArrowLeft;
 
   return (
@@ -47,8 +53,15 @@ function CaseStudyHero({ copy, locale }: { copy: CaseStudyCopy; locale: Locale }
         <p className="case-hero-summary">{copy.hero.summary}</p>
         <p className="case-attribution">{copy.hero.attribution}</p>
       </div>
-      <a className="case-hero-visual" href="https://firstautoeg.com/" target="_blank" rel="noreferrer">
-        <Image src="/first-auto-cover.jpeg" alt={copy.hero.imageAlt} fill priority sizes="(max-width: 900px) 100vw, 58vw" />
+      <a className="case-hero-visual" href={projectUrl} target="_blank" rel="noreferrer">
+        <Image
+          className={imageUrl.endsWith(".svg") ? "case-visual-contain" : undefined}
+          src={imageUrl}
+          alt={copy.hero.imageAlt}
+          fill
+          priority
+          sizes="(max-width: 900px) 100vw, 58vw"
+        />
         <span>{copy.navigation.live}<ArrowUpRight aria-hidden="true" /></span>
       </a>
     </header>
@@ -188,12 +201,11 @@ function CaseStudyContact({ copy, locale }: { copy: CaseStudyCopy; locale: Local
   );
 }
 
-export default function FirstGroupCaseStudy({ locale }: { locale: Locale }) {
-  const copy = getFirstGroupCaseStudy(locale);
+export default function ProjectCaseStudy({ copy, locale, imageUrl, projectUrl }: ProjectCaseStudyProps) {
   return (
     <main className="case-study-page">
       <div className="case-study-shell">
-        <CaseStudyHero copy={copy} locale={locale} />
+        <CaseStudyHero copy={copy} locale={locale} imageUrl={imageUrl} projectUrl={projectUrl} />
         <CaseFacts facts={copy.facts} />
         <OverviewSection copy={copy} />
         <OwnershipSection copy={copy} />

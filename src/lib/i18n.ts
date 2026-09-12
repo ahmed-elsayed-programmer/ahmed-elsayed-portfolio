@@ -105,9 +105,9 @@ export const portfolioCopy = {
       "inventory-sales": {
         type: "Business SaaS",
         role: "Full-stack product development",
-        evidence: "Private implementation reviewed",
+        evidence: "Private implementation and public sanitized proof",
         description:
-          "A private business platform for organizations, branches, inventory, customers, sales, reporting, permissions, and operational dashboards.",
+          "A private, in-progress retail-operations platform with tenant-aware access, branches, inventory, POS sales, customers, reporting, and release verification.",
       },
       "learning-platform": {
         type: "Education platform",
@@ -350,9 +350,9 @@ export const portfolioCopy = {
       "inventory-sales": {
         type: "نظام SaaS للأعمال",
         role: "تطوير المنتج Full‑Stack",
-        evidence: "تنفيذ خاص تمت مراجعته",
+        evidence: "تنفيذ خاص ودليل هندسي عام منقح",
         description:
-          "منصة أعمال خاصة لإدارة المؤسسات والفروع والمخزون والعملاء والمبيعات والتقارير والصلاحيات ولوحات التشغيل.",
+          "منصة خاصة قيد التطوير لعمليات التجزئة تشمل عزل المؤسسات والفروع والمخزون ومبيعات نقطة البيع والعملاء والتقارير والتحقق من الإصدار.",
       },
       "learning-platform": {
         type: "منصة تعليمية",

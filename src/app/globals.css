@@ -2120,7 +2120,7 @@ a:focus-visible {
 
 .case-hero h1 {
   margin: 1rem 0 1.5rem;
-  font-size: clamp(5rem, 11vw, 10rem);
+  font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 520;
   letter-spacing: -0.075em;
   line-height: 0.82;
@@ -2152,6 +2152,10 @@ a:focus-visible {
 .case-hero-visual img {
   object-fit: cover;
   transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.case-hero-visual img.case-visual-contain {
+  object-fit: contain;
 }
 
 .case-hero-visual:hover img {
@@ -2628,7 +2632,7 @@ a:focus-visible {
   }
 
   .case-hero h1 {
-    font-size: clamp(4.2rem, 24vw, 7rem);
+    font-size: clamp(3.6rem, 20vw, 6rem);
   }
 
   .case-facts,
