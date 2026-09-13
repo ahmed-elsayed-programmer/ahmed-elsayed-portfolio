@@ -306,7 +306,7 @@ const tijaraOsCaseStudy = {
     },
     navigation: {
       back: "Back to portfolio",
-      live: "View engineering proof",
+      live: "Open read-only demo",
       switchLanguage: "عرض دراسة الحالة بالعربية",
       alternateLanguage: "AR",
     },
@@ -314,15 +314,15 @@ const tijaraOsCaseStudy = {
       eyebrow: "Case study · Retail operations SaaS",
       title: "TijaraOS",
       summary:
-        "A private, in-progress retail-operations platform connecting tenant-aware Django APIs with bilingual Next.js web workflows and a cashier-focused Expo client.",
+        "An in-progress retail-operations platform connecting tenant-aware Django APIs with bilingual Next.js web workflows and a cashier-focused Expo client.",
       imageAlt: "Sanitized TijaraOS retail operations dashboard illustration",
-      attribution: "Private product · Sanitized engineering evidence published",
+      attribution: "Private product · Public read-only demo with fictional data",
     },
     facts: [
       ["Role", "Full-Stack Developer"],
       ["Scope", "Backend, web, and mobile"],
       ["Languages", "Arabic and English"],
-      ["Status", "In progress · no public production claim"],
+      ["Status", "In progress · public read-only demo"],
     ],
     overview: {
       index: "01",
@@ -407,9 +407,9 @@ const tijaraOsCaseStudy = {
     outcome: {
       index: "07",
       label: "Verified outcome",
-      title: "An implemented, pilot-oriented system with public engineering proof.",
+      title: "An implemented, pilot-oriented system with a public read-only demo.",
       description:
-        "The private implementation and sanitized evidence document the backend, web, mobile, data, permission, transaction, and delivery boundaries. No public production deployment, customer count, transaction volume, revenue, uptime, or performance result is claimed.",
+        "The public demo verifies the bilingual web experience, seeded fictional records, and Viewer-only access while the sanitized evidence documents the private backend, mobile, data, permission, transaction, and delivery boundaries. No customer count, transaction volume, revenue, uptime, or performance result is claimed.",
     },
     stack: {
       label: "Technology used",
@@ -430,7 +430,7 @@ const tijaraOsCaseStudy = {
     },
     navigation: {
       back: "العودة إلى معرض الأعمال",
-      live: "عرض الدليل الهندسي",
+      live: "فتح العرض التجريبي للقراءة فقط",
       switchLanguage: "View the case study in English",
       alternateLanguage: "EN",
     },
@@ -438,15 +438,15 @@ const tijaraOsCaseStudy = {
       eyebrow: "دراسة حالة · منصة SaaS لعمليات التجزئة",
       title: "TijaraOS",
       summary:
-        "منصة خاصة قيد التطوير لعمليات التجزئة، تربط واجهات Django API المعزولة حسب مساحة العمل بتطبيق ويب ثنائي اللغة عبر Next.js وتطبيق Expo موجه لنقطة البيع.",
+        "منصة قيد التطوير لعمليات التجزئة، تربط واجهات Django API المعزولة حسب مساحة العمل بتطبيق ويب ثنائي اللغة عبر Next.js وتطبيق Expo موجه لنقطة البيع.",
       imageAlt: "رسم توضيحي منقح للوحة عمليات التجزئة في TijaraOS",
-      attribution: "منتج خاص · نُشرت أدلة هندسية منقحة دون الكود الخاص",
+      attribution: "منتج خاص · عرض تجريبي عام للقراءة فقط ببيانات غير حقيقية",
     },
     facts: [
       ["الدور", "مطور Full‑Stack"],
       ["النطاق", "النظام الخلفي والويب والهاتف"],
       ["اللغات", "العربية والإنجليزية"],
-      ["الحالة", "قيد التطوير · لا يوجد ادعاء بإطلاق عام"],
+      ["الحالة", "قيد التطوير · عرض عام للقراءة فقط"],
     ],
     overview: {
       index: "01",
@@ -531,9 +531,9 @@ const tijaraOsCaseStudy = {
     outcome: {
       index: "07",
       label: "النتيجة الموثقة",
-      title: "نظام منفذ ومهيأ لمرحلة تجريبية مع دليل هندسي عام.",
+      title: "نظام منفذ ومهيأ لمرحلة تجريبية مع عرض عام للقراءة فقط.",
       description:
-        "يوثق التنفيذ الخاص والدليل المنقح حدود النظام الخلفي والويب والهاتف والبيانات والصلاحيات والمعاملات والتسليم. لا أدعي وجود إطلاق إنتاجي عام أو أعداد عملاء أو حجم معاملات أو إيرادات أو نسبة تشغيل أو نتيجة أداء.",
+        "يثبت العرض العام تجربة الويب ثنائية اللغة والبيانات التجريبية غير الحقيقية وصلاحية المشاهدة فقط، بينما يوثق الدليل المنقح حدود النظام الخلفي والهاتف والبيانات والصلاحيات والمعاملات والتسليم. لا أدعي أعداد عملاء أو حجم معاملات أو إيرادات أو نسبة تشغيل أو نتيجة أداء.",
     },
     stack: {
       label: "التقنيات المستخدمة",

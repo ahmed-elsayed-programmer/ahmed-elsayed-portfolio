@@ -106,9 +106,9 @@ export const projectsData = [
       "A private retail-operations platform for tenant-aware access, branches, inventory, POS sales, customers, reporting, and release verification.",
     tags: ["Django", "DRF", "Next.js", "PostgreSQL", "Redis", "Docker"],
     imageUrl: "/inventory-cover.svg",
-    projectUrl: "https://github.com/ahmed-elsayed-programmer/tijaraos-engineering-case-study",
+    projectUrl: "https://tijaraos.firstautoeg.com/",
     caseStudySlug: "tijaraos",
-    linkKind: "repository",
+    linkKind: "live",
   },
   {
     id: "learning-platform",

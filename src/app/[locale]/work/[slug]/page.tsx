@@ -23,7 +23,7 @@ const caseStudyAssets: Record<CaseStudySlug, CaseStudyAsset> = {
   },
   tijaraos: {
     imageUrl: "/inventory-cover.svg",
-    projectUrl: "https://github.com/ahmed-elsayed-programmer/tijaraos-engineering-case-study",
+    projectUrl: "https://tijaraos.firstautoeg.com/",
   },
 };
 
